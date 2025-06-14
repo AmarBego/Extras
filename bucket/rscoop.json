@@ -1,0 +1,33 @@
+{
+    "version": "1.2.4",
+    "description": "A Modern, Powerful GUI for Scoop package manager on Windows",
+    "homepage": "https://github.com/AmarBego/Rscoop",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/AmarBego/Rscoop/blob/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/AmarBego/Rscoop/releases/download/v1.2.4/rscoop.exe",
+            "hash": "6769d8ad73c913cd3043728255d75232260cb76a7459676cc3770f13e724dfd1"
+        }
+    },
+    "bin": "rscoop.exe",
+    "shortcuts": [
+        [
+            "rscoop.exe",
+            "rscoop"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/AmarBego/Rscoop/releases/download/v$version/rscoop.exe"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+} 
